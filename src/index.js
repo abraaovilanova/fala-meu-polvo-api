@@ -4,7 +4,8 @@ const cors = require('cors');
 const app = express()
 
 app.use(cors({
-    origin: '*'
+    origin: '*',
+    allowedHeaders: ['Content-Type', 'Authorization']
 }));
 
 app.use(express.json())
